@@ -126,8 +126,8 @@ def game():
             screen.blit(restart_text, (WIDTH // 2 - restart_text.get_width() // 2, HEIGHT // 2 + 60))
 
         # Verificar si el jugador sobrevivio a los max_enemies cuadrados azules
-        if (enemies_number > max_enemies) and (enemies_number > max_enemies + 10):
-            you_win_text = font.render("¡Qué bien! Sobreviviete a 5 enemigos ¡Ganaste!", True, BLUE)
+        if (enemies_number > max_enemies) and (enemies_number < max_enemies + 10):
+            you_win_text = font.render("¡Qué bien!¡Ganaste!", True, BLUE)
         
         #Mostar el texto de "Ganaste"
         if you_win_text is not None :
