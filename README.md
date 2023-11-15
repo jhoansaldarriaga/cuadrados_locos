@@ -15,6 +15,16 @@ Este es un simple juego creado con Pygame en el que el jugador controla un cuadr
 3. **Reiniciar el Juego:**
    - En caso de perder o ganar, puedes reiniciar el juego haciendo clic en el botón "Reiniciar".
 
+## Notas Adicionales:
+
+El juego tiene un límite de cinco cuadrados azules que pueden aparecer en pantalla.
+- Se muestra un mensaje de "Perdiste" si el jugador colisiona con un cuadrado azul.
+- Se muestra un mensaje de "Ganaste" si el jugador sobrevive a la aparición de cinco cuadrados azules.
+
+## Requisitos:
+Asegúrate de tener la biblioteca Pygame instalada para ejecutar el código. 
+¡Diviértete jugando a Cuadrados Locos!
+
 ## Código Fuente
 
 ```python
