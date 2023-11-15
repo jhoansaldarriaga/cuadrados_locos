@@ -25,6 +25,15 @@ El juego tiene un límite de cinco cuadrados azules que pueden aparecer en panta
 Asegúrate de tener la biblioteca Pygame instalada para ejecutar el código. 
 ¡Diviértete jugando a Cuadrados Locos!
 
+## Capturas de Pantalla
+
+![image](https://github.com/jhoansaldarriaga/cuadrados_locos/assets/104318820/14f03ab8-7a77-404a-ae9b-fc606bb5d5b8)
+
+![image](https://github.com/jhoansaldarriaga/cuadrados_locos/assets/104318820/caee97dc-5930-4260-99b4-61ad66ce68a3)
+
+![image](https://github.com/jhoansaldarriaga/cuadrados_locos/assets/104318820/ff504ab4-dbb7-4338-bbf3-1fa513e29d88)
+
+
 ## Código Fuente
 
 ```python
@@ -156,8 +165,8 @@ def game():
             screen.blit(restart_text, (WIDTH // 2 - restart_text.get_width() // 2, HEIGHT // 2 + 60))
 
         # Verificar si el jugador sobrevivio a los max_enemies cuadrados azules
-        if (enemies_number > max_enemies) and (enemies_number > max_enemies + 10):
-            you_win_text = font.render("¡Qué bien! Sobreviviete a 5 enemigos ¡Ganaste!", True, BLUE)
+        if (enemies_number > max_enemies) and (enemies_number < max_enemies + 10):
+            you_win_text = font.render("¡Qué bien!¡Ganaste!", True, BLUE)
         
         #Mostar el texto de "Ganaste"
         if you_win_text is not None :
@@ -178,4 +187,3 @@ def reset_game():
 
 # Llamada al juego
 game()
-
