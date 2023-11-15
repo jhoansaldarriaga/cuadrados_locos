@@ -1,5 +1,3 @@
-# cuadrados_locos
-
 # Cuadrados Locos
 
 Este es un simple juego creado con Pygame en el que el jugador controla un cuadrado rojo y debe evitar colisionar con cuadrados azules que aparecen en la pantalla. El objetivo es sobrevivir a la aparición de cinco cuadrados azules para ganar el juego.
